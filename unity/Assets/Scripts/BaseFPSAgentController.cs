@@ -519,7 +519,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
                                 });
                             }
 #if UNITY_EDITOR
-                            Debug.DrawLine(p, newPosition, Color.cyan, 100000f);
+                            //Debug.DrawLine(p, newPosition, Color.cyan, 100000f);
 #endif
                         }
                     }
@@ -3383,12 +3383,12 @@ namespace UnityStandardAssets.Characters.FirstPerson {
             for (int i = 0; i < pointsOnHullArray.Length; i++) {
                 DefaultVertex2D p0 = pointsOnHullArray[i];
                 DefaultVertex2D p1 = pointsOnHullArray[(i + 1) % pointsOnHullArray.Length];
-                Debug.DrawLine(
-                    start: new Vector3((float)p0.X, maxY, (float)p0.Y),
-                    end: new Vector3((float)p1.X, maxY, (float)p1.Y),
-                    color: Color.red,
-                    duration: 100.0f
-                );
+                // Debug.DrawLine(
+                //     start: new Vector3((float)p0.X, maxY, (float)p0.Y),
+                //     end: new Vector3((float)p1.X, maxY, (float)p1.Y),
+                //     color: Color.red,
+                //     duration: 100.0f
+                // );
             }
 #endif
 

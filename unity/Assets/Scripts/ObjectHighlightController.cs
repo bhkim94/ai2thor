@@ -234,7 +234,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
             var ray = m_Camera.GetComponent<Camera>().ScreenPointToRay(screenPosition);
             int layerMask = LayerMask.GetMask("SimObjVisible");
             Physics.Raycast(ray, out hit, this.MinHighlightDistance, layerMask);
-            Debug.DrawLine(ray.origin, hit.point, Color.red);
+            //(ray.origin, hit.point, Color.red);
 
             SimObjPhysics newHighlightedObject = null;
             Shader newPreviousShader = null;

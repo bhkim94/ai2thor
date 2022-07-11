@@ -255,7 +255,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
                         // action.snapToGrid = true;
                         // action.makeAgentsVisible = false;
                         // action.agentMode = "locobot";
-                        action["fieldOfView"] = 90f;
+                        action["fieldOfView"] = 60f;
                         // action.cameraY = 2.0f;
                         action["snapToGrid"] = true;
                         // action.rotateStepDegrees = 45;
