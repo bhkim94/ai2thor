@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 2fd11282feaa30c499ec2685c785f16e
+labels:
+- MetalMaterials
+- RawBathroomMaterials
+- RawBedroomMaterials
+- RawKitchenMaterials
+- RawLivingRoomMaterials
+- RawTestMaterials
+- RawTrainMaterials
+- RawValMaterials
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
