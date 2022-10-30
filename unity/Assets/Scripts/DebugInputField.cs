@@ -1556,13 +1556,13 @@ namespace UnityStandardAssets.Characters.FirstPerson {
                     }
 
                 case "to": {
-                        ServerAction action = new ServerAction();
-                        action.action = "TeleportObject";
-                        action.objectId = splitcommand[1];
-                        action.x = float.Parse(splitcommand[2]);
-                        action.y = float.Parse(splitcommand[3]);
-                        action.z = float.Parse(splitcommand[4]);
-                        CurrentActiveController().ProcessControlCommand(action);
+                        Dictionary<string, object> action = new Dictionary<string, object>() {
+                            ["action"] = "TeleportObject",
+                            ["objectId"] = "BasketBall|+07.65|+00.12|-03.34",
+                            ["position"] = Vector3.zero,
+                            ["rotation"] = Vector3.zero,
+                        };
+                        CurrentActiveController().ProcessControlCommand(new DynamicServerAction(action));
                         break;
                     }
                 case "daoot": {
